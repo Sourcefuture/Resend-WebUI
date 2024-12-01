@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href=bootstrap.min.css>
+    <link rel="stylesheet" href=style.css>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center login-container">
+        <form class="login-form text-center" id="login-form" action="https://mail-sender-worker.lcbmasters.com/verify-password" method="POST">
+            <h1 class="mb-5 font-weight-linght ">登录</h1>
+            <div class="form-group">
+                <input type="password" class="form-control rounded-pill form-control-lg" name="secret" placeholder="请输入登录密钥" required>
+            </div>
+            <div id="error-message" style="color: red; display: none;">密码错误，请重新输入</div>    
+            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block">登录</button>
+        </form>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮件发送</title>
+    <link rel="stylesheet" href=style.css>
+</head>
+<body>
+    <div class="container">
+        <h1>邮件发送</h1>
+        <div class="form-group">
+            <label for="sender-email">发件邮箱</label>
+            <input type="email" id="sender-email" placeholder="请输入发件邮箱">
+        </div>
+        <div class="form-group">
+            <label for="sender-name">发件人姓名</label>
+            <input type="text" id="sender-name" placeholder="请输入发件人姓名">
+        </div>
+        <div class="form-group">
+            <label for="receiver-email">收件人邮箱</label>
+            <input type="email" id="receiver-email" placeholder="请输入收件人邮箱">
+        </div>
+        <div class="form-group">
+            <label for="receiver-email">邮箱主题</label>
+            <input type="text" id="email-subject" placeholder="请输入邮件主题">
+        </div>
+        <div class="form-group">
+            <label for="email-content">邮件内容</label>
+            <textarea id="email-content" placeholder="请输入邮件内容"></textarea>
+        </div>
+        <button id="send-button" disabled>确认发送</button>
+    </div>
+
+    <!-- 退出按钮 -->
+    <button class="exit-btn">退出</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
